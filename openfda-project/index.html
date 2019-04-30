@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenFDA</title>
+</head>
+<body style="background-color: #00FF80;">
+
+<h1>OpenFDA</h1>
+<a><i>En los campos en los que ponga limite debera introducir el limite de elementos que desee recibir.</a></i><br>
+<a><i>Debe rellenar uno de los siguientes formularios.</a></i><br>
+
+<form action = "searchDrug" method="get">
+	<a>Buscar medicamento:</a><br>
+  <input type="text" name="active_ingredient" value=""><br>
+  Limite: <input type="text" name="limit" value=""><br>
+  <input type="submit" value="Buscar">
+</form>
+
+<form action = "searchCompany" method="get">
+	<a>Buscar empresa:</a><br>
+  <input type="text" name="company" value=""><br>
+  Limite: <input type="text" name="limit" value=""><br>
+  <input type="submit" value="Buscar">
+</form>
+
+<form action = "listDrugs" method="get">
+	<a>Lista de medicamentos:</a><br>
+  Limite: <input type="text" name="limit" value=""><br>
+  <input type="submit" value="Buscar">
+</form>
+
+<form action = "listCompanies" method="get">
+	<a>Lista de empresas:</a><br>
+  Limite: <input type="text" name="limit" value=""><br>
+	<input type="submit" value="Buscar">
+</form>
+
+</body>
+</html>
