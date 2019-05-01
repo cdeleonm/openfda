@@ -55,8 +55,8 @@ class testHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
               Limite: <input type="text" name="limit" value=""><br>
             	<input type="submit" value="Buscar">
             </form>
-            <form method="get" action="listWarnings">
-                <input type = "submit" value="Warnings">
+            <form action = "listWarnings" method="get">
+                <input type="submit" value="Warnings">
                 </input>
             </form>
 
@@ -224,6 +224,7 @@ class testHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(301)
             self.send_header('Location', 'http://localhost:' + str(PORT))
             self.end_headers()
+            
         else:
             self.send_response(404)
             self.send_header('Content-type', 'text/html')
