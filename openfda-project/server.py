@@ -55,6 +55,7 @@ class testHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
               Limite: <input type="text" name="limit" value=""><br>
             	<input type="submit" value="Buscar">
             </form>
+            
             <form action = "listWarnings" method="get">
                 <input type="submit" value="Warnings">
                 </input>
